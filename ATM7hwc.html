@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एटीएम मशीन</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            color: black;
+        }
+        /* लोगो बार उन्नत छाया के साथ */
+        .logo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px;
+            background: #f8f9fa;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* उन्नत छाया */
+            position: relative;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo-heading {
+            font-size: 35px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            color: #060f78;
+        }
+        /* केंद्रित शीर्षक */
+        .title-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            color: #060f78;
+        }
+        /* बॉक्स कंटेनर बढ़ी हुई ऊँचाई के साथ */
+        .box-container {
+            max-width: 900px;
+            min-height: 400px; /* बढ़ी हुई ऊँचाई */
+            margin: 40px auto;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            display: flex;
+            align-items: center; /* सामग्री को ऊर्ध्वाधर रूप से केंद्रित करें */
+            margin-bottom: 5px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 350px; /* बढ़ाई गई चौड़ाई */
+            height: 250px; /* ऊँचाई निर्धारित करें */
+            border-radius: 10px;
+            object-fit: cover; /* सुनिश्चित करता है कि छवि विकृत न हो */
+            transition: all 0.3s ease-in-out; /* स्मूथ ट्रांज़िशन */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* हल्का ज़ूम प्रभाव */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* गहराई के लिए छाया */
+            cursor: pointer;
+        }
+
+        .text-content {
+            padding-left: 20px;
+        }
+        .text-content h2 {
+            color: #060f78;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .text-content p {
+            font-size: 16px;
+            color: #333;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="logo-bar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png" alt="एटीएम लोगो">
+        </div>
+        <div class="logo-heading">एसबीआई</div>
+        <div class="title-container">
+            <h1>स्टेट बैंक ऑफ इंडिया</h1>
+        </div>
+    </div>
+
+    <!-- बॉक्स कंटेनर -->
+    <div class="container">
+        <div class="box-container">
+            <div class="row align-items-center">
+                <!-- बाईं ओर छवि -->
+                <div class="col-md-4 text-center">
+                    <div class="image-container">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-04/21/full/1713715247-3179.jpg" alt="एटीएम मशीन">
+                    </div>
+                </div>
+                <!-- दाईं ओर पाठ -->
+                <div class="col-md-8 text-content">
+                    <h2>कृपया राशि ले लें</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    setTimeout(function() {
+        window.location.href = "ATM8hwt.html"; // अगला पृष्ठ 5 सेकंड बाद खोलें
+    }, 5000); // 5000 मिलीसेकंड = 5 सेकंड
+</script>
+
+</body>
+</html>

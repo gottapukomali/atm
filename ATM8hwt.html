@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एटीएम मशीन</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            color: black;
+        }
+        /* लोगो बार उन्नत छाया के साथ */
+        .logo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px;
+            background: #f8f9fa;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo-heading {
+            font-size: 35px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            color: #060f78;
+        }
+        /* केंद्रित शीर्षक */
+        .title-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            color: #060f78;
+        }
+        /* बॉक्स कंटेनर केंद्रित सामग्री के साथ */
+        .box-container {
+            max-width: 900px;
+            min-height: 400px;
+            margin: 40px auto;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* सामग्री को ऊर्ध्वाधर रूप से केंद्रित करें */
+            text-align: center;
+        }
+        /* H1 के लिए स्टाइलिंग */
+        .box-container h1 {
+            color: #060f78; /* नीला रंग */
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px 0; /* अंतर जोड़ें */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-bar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png" alt="एटीएम लोगो">
+        </div>
+        <div class="logo-heading">एसबीआई</div>
+        <div class="title-container">
+            <h1>स्टेट बैंक ऑफ इंडिया</h1>
+        </div>
+    </div>
+
+    <!-- बॉक्स कंटेनर -->
+    <div class="container">
+        <div class="box-container">
+            <h1>धन्यवाद</h1>
+            <h1>फिर से आएं</h1>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html"; // 5 सेकंड बाद अगले पेज पर जाएं
+        }, 5000); // 5000 मिलीसेकंड = 5 सेकंड
+    </script>
+
+</body>
+</html>

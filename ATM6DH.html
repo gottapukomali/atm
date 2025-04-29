@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एटीएम मशीन</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            color: black;
+        }
+        .logo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px;
+            background: #f8f9fa;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo-heading {
+            font-size: 35px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            color: #060f78;
+        }
+        .title-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            color: #060f78;
+        }
+        .box-container {
+            max-width: 900px;
+            min-height: 400px;
+            margin: 40px auto;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .box-container h3 {
+            margin-bottom:70px;
+            color: #060f78;
+        }
+        .number-input {
+            margin-top: 20px;
+        }
+        .number-input input {
+            font-size: 24px;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease-in-out;
+        }
+        .number-input input:hover, .number-input input:focus {
+            border-color: #0056b3;
+            box-shadow: 0px 0px 8px rgba(0, 86, 179, 0.8);
+            outline: none;
+        }
+        .lang-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            min-width: 150px;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .CHANGE-LANGUAGE { background-color: #0056b3; }
+        .YES { background-color: #0056b3; }
+        .NO { background-color: #0056b3; }
+        .lang-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-bar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png" alt="एटीएम लोगो">
+        </div>
+        <div class="logo-heading">एसबीआई</div>
+        <div class="title-container">
+            <h1>भारतीय स्टेट बैंक</h1>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <h3>10 और 99 के बीच कोई भी संख्या दर्ज करें<br>उदाहरण के लिए: "88"</h3>
+        <div class="number-input">
+            <input type="number" id="number" maxlength="2" placeholder="संख्या">
+        </div><br><br>
+        <div class="lang-container">
+            <a href="ATM2.html" class="lang-btn CHANGE-LANGUAGE">भाषा बदलें</a>
+            <a href="ATM6DHs.html" class="lang-btn YES">हाँ</a>
+            <a href="ATM12DH.html" class="lang-btn NO">नहीं</a>
+        </div>
+    </div>
+</body>
+</html>

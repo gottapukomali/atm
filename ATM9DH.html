@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एटीएम मशीन</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+         body {
+            color: black;
+        }
+        /* हेडर स्टाइलिंग */
+        .logo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+       .logo-heading {
+            font-size: 35px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+            color: #060f78;
+        }
+        .title-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 22px;
+            font-weight: bold;
+            color: #060f78;
+        }
+
+        /* बॉक्स स्टाइलिंग */
+        .box-container {
+            max-width: 600px;
+            min-height: 450px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+        }
+        .box-container h3 {
+            margin-bottom: 30px;
+            color: #060f78;
+            font-size: 24px;
+        }
+
+        /* टेबल स्टाइलिंग */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .data-table th {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* बटन स्टाइलिंग */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .action-btn {
+            min-width: 180px;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, background 0.3s;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .conform-btn { background-color: #0056b3; } /* हरा */
+        .add-btn { background-color: #0056b3; } /* नीला */
+        .cancel-btn { background-color: #0056b3; } /* लाल */
+        .action-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- हेडर -->
+    <div class="logo-bar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png" alt="एटीएम लोगो">
+        </div>
+        <div class="logo-heading">एसबीआई</div>
+        <div class="title-container">
+            <h1>भारतीय स्टेट बैंक</h1>
+        </div>
+    </div>
+
+    <!-- मुख्य सामग्री -->
+    <div class="box-container">
+        <h3>अपना विकल्प चुनें</h3>
+      
+        <!-- डेटा टेबल -->
+        <table class="data-table">
+            <tr>
+                <th>मूल्य</th>
+                <th>संख्या</th>
+                <th>योग</th>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>1</td>
+				<td>500</td>
+
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right; font-weight: bold;">कुल = 500</td>
+            </tr>
+        </table>
+
+        <!-- क्रिया बटन -->
+        <div class="btn-container">
+            <a href="ATM10DH.html" class="action-btn conform-btn">पुष्टि करें</a>
+            <a href="ATM8DH.html" class="action-btn add-btn">अधिक राशि जोड़ें</a>
+            <a href="ATM12DH.html" class="action-btn cancel-btn">रद्द करें</a>
+        </div>
+    </div>
+</body>
+</html>
